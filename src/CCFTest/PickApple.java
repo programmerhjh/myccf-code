@@ -14,7 +14,7 @@ public class PickApple {
 			arrayList.add(scanner.nextInt() - chairHeight);
 		}
 		final int playerHeight = scanner.nextInt();
-		arrayList = arrayList.stream().filter(num -> num > playerHeight).collect(Collectors.toList());
+		arrayList = arrayList.stream().filter(n -> n > playerHeight).collect(Collectors.toList());
 		System.out.println(arrayList.size());
 		scanner.close();
 	}

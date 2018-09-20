@@ -1,9 +1,6 @@
 package CCFTest;
 
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
 import java.util.Scanner;
 
 public class FerrisWheel {
@@ -27,7 +24,7 @@ public class FerrisWheel {
 			int resultTime = 0;
 			
 			for (int j = 1; j <= n; j++) {
-				peopleList.add(new BeRemovePeople(new ArrayList<>(), j));
+				peopleList.add(new BeRemovePeople(new ArrayList<Integer>(), j));
 			}
 			
 			while (!(peopleList.isEmpty() && peopleSeatList.isEmpty())) {

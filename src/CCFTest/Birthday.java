@@ -1,6 +1,7 @@
 package CCFTest;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.Scanner;
 
@@ -22,7 +23,7 @@ public class Birthday {
 			arrayList.add(scanner.nextInt());
 		}
 
-		arrayList.sort(new Comparator<Integer>() {
+		Collections.sort(arrayList,new Comparator<Integer>() {
 			@Override
 			public int compare(Integer o1, Integer o2) {
 				return o1 - o2;
